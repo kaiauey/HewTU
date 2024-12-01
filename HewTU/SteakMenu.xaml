@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.SteakMenu"
+             Title="SteakMenu">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20" BackgroundColor="#FFF9F0">
+            
+            <!-- Header -->
+            <Label 
+                Text="Select Menu !" 
+                FontSize="24" 
+                FontAttributes="Bold"
+                HorizontalOptions="Center" 
+                TextColor="#000000"/>
+
+            <!-- Search Bar -->
+            <SearchBar 
+                Placeholder="Search here" 
+                BackgroundColor="#FFFFFF" 
+                TextColor="Black"
+                CancelButtonColor="Gray" />
+
+            <!-- Filter Buttons -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button 
+                    Text="All" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+                <Button 
+                    Text="Pork" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+                <Button 
+                    Text="Meat" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+            </HorizontalStackLayout>
+
+            <!-- Menu Items -->
+            <VerticalStackLayout Spacing="20" Padding="10">
+                
+                <!-- CreamCornPorkshop -->
+                
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                        
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="CreamCornPorkchop" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToCreamCornPorkchop"/>
+                    </Grid>
+                </Frame>
+
+                <!-- pepperpork -->
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                        
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="PepperPorkSteak" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToPepperPorkSteak"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Salmon -->
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                       
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="SalmonSteak" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToSalmonSteak"/>
+                    </Grid>
+                </Frame>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,181 @@
+is_global = true
+build_property.PropertyChangedAnalyzerConfiguration = 
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HewTU
+build_property.ProjectDir = /Users/aueyeay/Projects/DX212/HewTU/HewTU/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/CakeMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.CakeMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = CakeMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = CakeMenu.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/BlueberryCheesePie.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.BlueberryCheesePie.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/BlueberryCheesePie.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/BlueberryCheesePie.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/ChocolateCake.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.ChocolateCake.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/ChocolateCake.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/ChocolateCake.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/CreamCornPorkchop.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.CreamCornPorkchop.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/CreamCornPorkchop.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/CreamCornPorkchop.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/GreenTea.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.GreenTea.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/GreenTea.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/GreenTea.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/MalaStick.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.MalaStick.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/MalaStick.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/MalaStick.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/Malatang.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.Malatang.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/Malatang.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/Malatang.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/MalaTomyum.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.MalaTomyum.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/MalaTomyum.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/MalaTomyum.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/MilkTea.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.MilkTea.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/MilkTea.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/MilkTea.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/PepperPorkSteak.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.PepperPorkSteak.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/PepperPorkSteak.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/PepperPorkSteak.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/SalmonSteak.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.SalmonSteak.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/SalmonSteak.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/SalmonSteak.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/StrawberryShortCake.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.StrawberryShortCake.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/StrawberryShortCake.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/StrawberryShortCake.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/DescriptionMenu/Thaitea.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.DescriptionMenu.Thaitea.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionMenu/Thaitea.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionMenu/Thaitea.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/MalaMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.MalaMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = MalaMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = MalaMenu.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/MenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.MenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuPage.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/NewMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.NewMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = NewMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = NewMenu.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/OrderDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.OrderDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderDetail.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/OrderSummaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.OrderSummaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderSummaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderSummaryPage.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/SteakMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.SteakMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = SteakMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = SteakMenu.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/StorePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.StorePage.xaml
+build_metadata.AdditionalFiles.TargetPath = StorePage.xaml
+build_metadata.AdditionalFiles.RelativePath = StorePage.xaml
+
+[/Users/aueyeay/Projects/DX212/HewTU/HewTU/SuccessPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HewTU.SuccessPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SuccessPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SuccessPage.xaml

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.RegisterPage"
+             Title="RegisterPage"
+             BackgroundColor="#FFFBD0EB">
+     <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition  Height="10*"></RowDefinition>
+                        <RowDefinition  Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"
+                         BackgroundColor="FloralWhite"></BoxView>
+                <BoxView Grid.Row="1"
+                         BackgroundColor="#FFFBD0EB"></BoxView>
+
+                <VerticalStackLayout Padding="20,100" Spacing="15">
+                        <Image Source="logo.png"
+                                HeightRequest="180"
+                                WidthRequest="180"></Image>
+
+                        <Label Text="HEW TU"
+                               FontFamily="Market Felt"
+                               FontSize="30"
+                               TextColor="HotPink"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"></Label>
+                        <Label Text="DELIVERY APP 🛒"
+                               FontFamily="Palatino"
+                               FontSize="30"
+                               TextColor="HotPink"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"></Label>
+
+                        <Border Grid.Row="1"
+                                StrokeShape="RoundRectangle 20"
+                                StrokeThickness="1"
+                                BackgroundColor="#FFFFFBCA"
+                                VerticalOptions="End"
+                                HorizontalOptions="Fill"
+                                Margin="20"
+                                Padding="20">
+                                <VerticalStackLayout Spacing="10">
+                                        <Entry Placeholder="Enter your email"
+                                               PlaceholderColor="#999999"
+                                               TextColor="Black"
+                                               BackgroundColor="#FFF"
+                                               HeightRequest="50"
+                                               HorizontalTextAlignment="Start"
+                                               Margin="0,0,0,10">
+                                                <Entry.Shadow>
+                                                        <Shadow Brush="Gray"
+                                                                Offset="2,2"
+                                                                Radius="5"
+                                                                Opacity="0.5"/>
+                                                </Entry.Shadow>
+                                        </Entry>
+
+                                        <Entry Placeholder="Enter your password"
+                                               IsPassword="True"
+                                               PlaceholderColor="#999999"
+                                               TextColor="Black"
+                                               BackgroundColor="#FFF"
+                                               HeightRequest="50"
+                                               HorizontalTextAlignment="Start"
+                                               
+                                               Margin="0,0,0,10">
+                                                <Entry.Shadow>
+                                                        <Shadow Brush="Gray"
+                                                                Offset="2,2"
+                                                                Radius="5"
+                                                                Opacity="0.5"/>
+                                                </Entry.Shadow>
+                                        </Entry>
+
+                                        <Label Text="Forgot Password?"
+                                               TextColor="#555555"
+                                               FontSize="12"
+                                               FontAttributes="Italic"
+                                               HorizontalTextAlignment="End"
+                                               HorizontalOptions="End"
+                                               Margin="0,0,0,10"/>
+
+
+                                        <Button Text="Login"
+                                                BackgroundColor="#FF69B4"
+                                                TextColor="White"
+                                                CornerRadius="25"
+                                                FontAttributes="Bold"
+                                                HeightRequest="50"
+                                                HorizontalOptions="Fill"
+                                                VerticalOptions="Center"
+                                                Clicked="OnRegisterButtonClicked"/>
+
+                                        <Label Text="Don't have an account? Create an account"
+                                               TextColor="#777777"
+                                               FontSize="12"
+                                               HorizontalTextAlignment="Center"
+                                               Margin="0,20,0,0"/>
+                                </VerticalStackLayout>
+                        </Border>
+                </VerticalStackLayout>
+        </Grid>
+</ContentPage>

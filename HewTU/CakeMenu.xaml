@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.CakeMenu"
+             Title="CakeMenu">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20" BackgroundColor="#FFF9F0">
+            
+            <!-- Header -->
+            <Label 
+                Text="Select Menu !" 
+                FontSize="24" 
+                FontAttributes="Bold"
+                HorizontalOptions="Center" 
+                TextColor="#000000"/>
+
+            <!-- Search Bar -->
+            <SearchBar 
+                Placeholder="Search here" 
+                BackgroundColor="#FFFFFF" 
+                TextColor="Black"
+                CancelButtonColor="Gray" />
+
+            <!-- Filter Buttons -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button 
+                    Text="All" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+                <Button 
+                    Text="Cake" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+                <Button 
+                    Text="Cupcake" 
+                    BackgroundColor="#FFFFF2A8" 
+                    TextColor="Black" 
+                    CornerRadius="20"/>
+            </HorizontalStackLayout>
+
+            <!-- Menu Items -->
+            <VerticalStackLayout Spacing="20" Padding="10">
+                
+                <!-- CreamCornPorkshop -->
+                
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                        
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="BlueberryCheesePie" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToBlueberryCheesePie"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Layer Chocolate Cake-->
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                        
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Layer Chocolate Cake" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToChocolateCake"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Salmon -->
+                <Frame BorderColor="#FFE0E0E0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                    <Grid ColumnDefinitions="2*,1*" Padding="10">
+                       
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="StrawberryShortCake" FontSize="18" FontAttributes="Bold" TextColor="#000000"/>
+                        </StackLayout>
+                        <Button 
+                            Text="+" 
+                            BackgroundColor="#FFFFB8D9" 
+                            TextColor="White" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            CornerRadius="20"
+                            VerticalOptions="End" 
+                            HorizontalOptions="End"
+                            Clicked="NavigateToStrawberryShortCake"/>
+                    </Grid>
+                </Frame>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

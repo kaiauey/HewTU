@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.DescriptionMenu.GreenTea"
+             Title="GreenTea">
+
+    <!-- ScrollView ครอบคลุมพื้นที่ -->
+    <ScrollView VerticalOptions="FillAndExpand">
+        <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="#FFF9F0">
+            <!-- เฟรมรูปภาพและรายละเอียด -->
+            <Frame Padding="15" CornerRadius="20" BackgroundColor="#FFF2C2" HorizontalOptions="Center" WidthRequest="300">
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <!-- รูปภาพ -->
+                    <Image Source="greentea.JPG" WidthRequest="300" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" />
+                    <!-- ชื่อเมนู -->
+                    <Label Text="Green Tea"
+                            FontFamily="Palatino"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#3131B9"
+                           HorizontalOptions="Start" />
+                    <!-- ราคา -->
+                    <Label Text="Price : 65 baht"
+                           FontSize="16"
+                           FontFamily="Palatino"
+                           FontAttributes="Bold"
+                           TextColor="DarkGray"
+                           HorizontalOptions="Start" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- คำอธิบาย -->
+            <Label Text="ชาเขียวต้นตำรับ (Original Green Tea)"
+              FontFamily="Palatino"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,0" />
+            <Label Text="ชาเขียวนมสดที่ได้แรงบันดาลใจจากวัฒนธรรมการดื่มชาญี่ปุ่น คัดสรรใบชาเขียวคุณภาพ หอมละมุนตามธรรมชาติ ผสมกับนมสดแท้ที่ให้ความหวานมันอย่างลงตัว สัมผัสรสชาติที่สดชื่นและกลมกล่อม ดื่มง่าย เหมาะสำหรับทุกช่วงเวลา"
+                   FontSize="14"
+                   TextColor="#5D5D5D"
+                   Margin="0,5,0,10" />
+
+            <!-- ตัวเลือก Topping -->
+            <Label Text="เลือก Topping:"
+                   FontSize="16"
+                   FontFamily="Palatino"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Select Topping"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>Caramel Bubble</x:String>
+                    <x:String>Grass Jelly</x:String>
+                    <x:String>Aloe Vera</x:String>
+                    <x:String>No Topping</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ตัวเลือกระดับความหวาน -->
+            <Label Text="เลือกระดับความหวาน:"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Select Sweetness Level"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>100% (Sweet)</x:String>
+                    <x:String>75% (Less Sweet)</x:String>
+                    <x:String>50% (Half Sweet)</x:String>
+                    <x:String>25% (Mild Sweet)</x:String>
+                    <x:String>0% (No Sweet)</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ทดสอบเลื่อน -->
+            
+            
+            <!-- ปุ่ม Add to cart -->
+            <Button Text="Add to cart"
+                    BackgroundColor="#FFC0CB"
+                    TextColor="White"
+                    FontFamily="Palatino"
+                    FontSize="18"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    Clicked="NavigateToOrderSummary" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

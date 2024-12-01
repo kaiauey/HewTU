@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.DescriptionMenu.CreamCornPorkchop"
+             Title="CreamCornPorkchop">
+
+    <!-- ScrollView ครอบคลุมพื้นที่ -->
+    <ScrollView VerticalOptions="FillAndExpand">
+        <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="#FFF9F0">
+            <!-- เฟรมรูปภาพและรายละเอียด -->
+            <Frame Padding="15" CornerRadius="20" BackgroundColor="#FFF2C2" HorizontalOptions="Center" WidthRequest="300">
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <!-- รูปภาพ -->
+                    <Image Source= "creamcornporkchop.jpg" WidthRequest="300" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" />
+                    <!-- ชื่อเมนู -->
+                    <Label Text="Creamed Corn Porkchop"
+                            FontFamily="Palatino"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#3131B9"
+                           HorizontalOptions="Start" />
+                    <!-- ราคา -->
+                    <Label Text="Price : 150 Baht"
+                           FontSize="16"
+                           FontFamily="Palatino"
+                           FontAttributes="Bold"
+                           TextColor="DarkGray"
+                           HorizontalOptions="Start" />
+                    <!-- ปุ่มเพิ่มสินค้า -->
+                    <Button Text="+"
+                            FontSize="20"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BackgroundColor="#82C7FF"
+                            CornerRadius="25"
+                            TextColor="White"
+                            HorizontalOptions="End"
+                            Margin="0,10,0,0" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- คำอธิบาย -->
+            <Label Text="พอร์คชอปครีมคอร์น (Creamed Corn Porkchop)"
+              FontFamily="Palatino"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,0" />
+            <Label Text="เมนูพอร์คชอปชิ้นหนานุ่ม ย่างหอมกรุ่น เสิร์ฟคู่ซอสครีมข้าวโพดเข้มข้น หวานมันกลมกล่อม ผสมความกรุบกรอบของข้าวโพดอ่อนคั่ว รสชาติลงตัวทุกคำ เป็นจานพิเศษที่อร่อยและน่าลิ้มลองในทุกโอกาส!"
+                   FontSize="14"
+                   TextColor="#5D5D5D"
+                   Margin="0,5,0,10" />
+
+            <!-- ตัวเลือก Source -->
+            <Label Text="เลือก Sauce:"
+                   FontSize="16"
+                   FontFamily="Palatino"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Select Sauce"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>Spicy BBQ Sauce</x:String>
+                    <x:String>Truffle Mushroom Sauce</x:String>
+                    <x:String>Black Pepper Sauce</x:String>
+                    <x:String>Smoked Tomato Sauce</x:String>
+      <x:String>Honey Mustard Sauce</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ตัวเลือกระดับความหวาน -->
+            <Label Text="เลือกเครื่องเคียง:"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Select Side dish"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>Garlic Bread</x:String>
+                    <x:String>Mashed Potatoes</x:String>
+                    <x:String>Creamy Coleslaw</x:String>
+                    <x:String>Grilled Vegetables</x:String>
+                    <x:String>Fries</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ทดสอบเลื่อน -->
+            
+            
+            <!-- ปุ่ม Add to cart -->
+            <Button Text="Add to cart"
+                    BackgroundColor="#FFC0CB"
+                    TextColor="White"
+                    FontFamily="Palatino"
+                    FontSize="18"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    Clicked="NavigateToOrderSummary" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

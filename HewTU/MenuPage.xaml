@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.MenuPage"
+             Title="MenuPage">
+
+    <!-- หน้าหลัก -->
+    <VerticalStackLayout Spacing="15"
+                         Padding="20"
+                         BackgroundColor="#FFEAF6">
+    
+        <!-- หัวข้อ -->
+            <Label Text="Select Menu !"
+                FontSize="26"
+                FontFamily="Palatino"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#000000"/>
+
+        <!-- แถบค้นหา -->
+        <SearchBar Placeholder="search here"
+                   BackgroundColor="#FFFFFF"
+                   TextColor="#000000"
+                   CancelButtonColor="#FFC02424"
+                   Margin="0,10,0,10"
+                   HeightRequest="40"
+                   FontSize="14"
+                   FontFamily="Palatino"/>
+
+        <!-- ปุ่มกรอง -->
+        <HorizontalStackLayout HorizontalOptions="Center"
+                               Spacing="20">
+            <Button Text="All"
+                    BackgroundColor="#FFFFFF"
+                    TextColor="#000000"
+                    FontFamily="Palatino"
+                    CornerRadius="20"
+                    FontSize="14"
+                    HeightRequest="35"
+                    WidthRequest="110"/>
+            <Button Text="Menu"
+                    BackgroundColor="#FFFFF1A4"
+                    TextColor="#000000"
+                    FontFamily="Palatino"
+                    CornerRadius="20"
+                    FontSize="14"
+                    HeightRequest="35"
+                    WidthRequest="110"/>
+            <Button Text="Discount"
+                    BackgroundColor="#FFFFF1A4"
+                    TextColor="#000000"
+                    FontFamily="Palatino"
+                    CornerRadius="20"
+                    FontSize="14"
+                    HeightRequest="35"
+                    WidthRequest="100"/>
+        </HorizontalStackLayout>
+
+        <!-- รายการเมนู -->
+        <CollectionView x:Name="CollectionViewMenu"
+                        Margin="0,10,0,10">
+            <!-- ใช้ LinearItemsLayout -->
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 10"
+                            StrokeThickness="0"
+                            Padding="15"
+                            BackgroundColor="#FFFFFF"
+                            Margin="10,5,10,5">
+                        <Grid ColumnDefinitions="4*, Auto"
+                              RowDefinitions="Auto">
+                            <!-- ชื่อเมนู -->
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="{Binding MenuName}"
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       FontFamily="Palatino"
+                                       TextColor="#3D5A80"
+                                       Margin="0,0,0,5"/>
+                                <Label Text="{Binding Price}"
+                                       FontSize="14"
+                                       FontFamily="Palatino"
+                                       TextColor="#8E8E8E"/>
+                            </VerticalStackLayout>
+
+                            <!-- ปุ่ม ImageButton -->
+                            <ImageButton Grid.Column="1"
+                                         HeightRequest="50"
+                                         WidthRequest="50"
+                                         BackgroundColor="#B3D8FF"
+                                         CornerRadius="25"
+                                         CommandParameter="{Binding Id}"
+                                         HorizontalOptions="Center"
+                                         VerticalOptions="Center"
+                                         Clicked="NavigateToThaiTea">
+                                <ImageButton.Source>
+                                    <FontImageSource Glyph="+"
+                                                     FontFamily="Default"
+                                                     Size="25"
+                                                     Color="White"/>
+                                </ImageButton.Source>
+                            </ImageButton>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
+
+                            

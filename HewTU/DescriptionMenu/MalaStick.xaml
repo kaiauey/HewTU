@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.DescriptionMenu.MalaStick"
+             Title="MalaStick">
+   
+    <!-- ScrollView ครอบคลุมพื้นที่ -->
+    <ScrollView VerticalOptions="FillAndExpand">
+        <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="#FFF9F0">
+            <!-- เฟรมรูปภาพและรายละเอียด -->
+            <Frame Padding="15" CornerRadius="20" BackgroundColor="#FFF2C2" HorizontalOptions="Center" WidthRequest="300">
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <!-- รูปภาพ -->
+                    <Image Source="malastick.jpg" WidthRequest="300" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" />
+                    <!-- ชื่อเมนู -->
+                    <Label Text="Mala Stick"
+                            FontFamily="Palatino"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#3131B9"
+                           HorizontalOptions="Start" />
+                    <!-- ราคา -->
+                    <Label Text="Price : 100 baht"
+                           FontSize="16"
+                           FontFamily="Palatino"
+                           FontAttributes="Bold"
+                           TextColor="DarkGray"
+                           HorizontalOptions="Start" />
+                    <!-- ปุ่มเพิ่มสินค้า -->
+                    <Button Text="+"
+                            FontSize="20"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BackgroundColor="#82C7FF"
+                            CornerRadius="25"
+                            TextColor="White"
+                            HorizontalOptions="End"
+                            Margin="0,10,0,0" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- คำอธิบาย -->
+            <Label Text="ชุดหม่าล่าไม้ (Mala Stick Set)"
+              FontFamily="Palatino"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,0" />
+            <Label Text="พบกับประสบการณ์ใหม่ของความเผ็ดร้อนสุดขั้วกับ หม่าล่าไม้ ที่เต็มไปด้วยรสชาติที่ท้าให้คุณลิ้มลอง! เนื้อสัตว์ชิ้นหนาๆ ย่างมาอย่างดี กลิ่นหอมกระตุ้นทุกประสาทสัมผัส ผสมผสานกับความเผ็ดซ่านำเข้าจากเครื่องเทศแท้ๆ จัดเต็มความจัดจ้านที่คุณไม่เคยรู้สึกมาก่อน ให้ทุกคำเป็นคำพิเศษ ห้ามพลาด ความเผ็ดร้อนที่ต้องลอง!"
+                   FontSize="14"
+                   TextColor="#5D5D5D"
+                   Margin="0,5,0,10" />
+
+            <!-- ตัวเลือก Topping -->
+            <Label Text="เลือก น้ำจิ้ม:"
+                   FontSize="16"
+                   FontFamily="Palatino"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Select Sauce"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>น้ำจิ้มเฟยเฟย</x:String>
+                    <x:String>น้ำจิ้มสุกี้ปรุงรส</x:String>
+                    <x:String>ซอสงา</x:String>
+                    <x:String>น้ำจิ้มสุกี้</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ตัวเลือกระดับความเผ็ด -->
+            <Label Text="เลือกระดับความเผ็ด:"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#3B3B3B"
+                   Margin="0,10,0,5" />
+            <Picker Title="Choose Your Spice Level"
+                    FontSize="14"
+                    TextColor="#5D5D5D">
+                <Picker.Items>
+                    <x:String>100% (Extra Spicy)</x:String>
+                    <x:String>75% (Spicy)</x:String>
+                    <x:String>50% (Medium)</x:String>
+                    <x:String>25% (Mild)</x:String>
+                    <x:String>0% (Not spicy)</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- ทดสอบเลื่อน -->
+            
+            
+            <!-- ปุ่ม Add to cart -->
+            <Button Text="Add to cart"
+                    BackgroundColor="#FFC0CB"
+                    TextColor="White"
+                    FontFamily="Palatino"
+                    FontSize="18"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"
+                    WidthRequest="300" 
+                    Clicked="NavigateToOrderSummary"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

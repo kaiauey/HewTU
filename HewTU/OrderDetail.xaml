@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.OrderDetail"
+             Title="OrderDetail">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="40" Spacing="10">
+
+            <!-- Title -->
+            <Label Text="Order Detail"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="#FF69B4"
+                   HorizontalOptions="Center" />
+
+            <!-- Map Image -->
+            <Image Source="map.png"
+                   HeightRequest="250"
+                   Aspect="AspectFill"/>
+
+            <!-- Order Timeline -->
+            <VerticalStackLayout Spacing="20">
+                <!-- Timeline Step 1 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Order Placement" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The seller or e-commerce platform receives the order."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Timeline Step 2 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Order Processing" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The seller begins processing the order."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Timeline Step 3 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Packaging" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The ordered items are securely packaged."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Timeline Step 4 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Shipping" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The packaged items are handed to the courier."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Timeline Step 5 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Transit" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The provider delivers the package."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Timeline Step 6 -->
+                <HorizontalStackLayout Spacing="10">
+                    <Ellipse WidthRequest="10" HeightRequest="10" Fill="LightBlue" />
+                    <VerticalStackLayout>
+                        <Label Text="Delivery" FontAttributes="Bold" FontSize="14" />
+                        <Label Text="The package arrives at the destination address."
+                               FontSize="12" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <!-- Download Invoice Button -->
+            <Button Text="back to menu page"
+                    BackgroundColor="#FF69B4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="NavigateToStorePage"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

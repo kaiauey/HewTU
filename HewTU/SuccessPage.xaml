@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.SuccessPage"
+             Title="SuccessPage">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="30"
+                             Padding="20"
+                             BackgroundColor="FloralWhite">
+            <!-- Header -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Hew TU"
+                       FontSize="22"
+                       TextColor="#FFF083CC"
+                       FontFamily="Palatino"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       Grid.Column="1"/>
+            </Grid>
+
+            <!-- Success Icon -->
+            <Image Source="check.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+
+            <!-- Success Message -->
+            <VerticalStackLayout Spacing="10"
+                                 HorizontalOptions="Center">
+                <Label Text="Payment Success"
+                       FontSize="25"
+                       FontFamily="Palatino"
+                       FontAttributes="Bold"
+                       TextColor="#FFF083CC"
+                       HorizontalOptions="Center"/>
+                <Label Text="Your order has been placed."
+                       FontSize="14"
+                       FontFamily="Palatino"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+                <Label Text="Don’t forget to go to the pickup point."
+                       FontSize="14"
+                       FontFamily="Palatino"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!--  Button -->
+            <Button Text="Back to Menu"
+                    BackgroundColor="#FFFFA3D1"
+                    TextColor="#FFFFFEFD"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    FontFamily="Palatino"
+                    VerticalOptions="End"
+                    Clicked="NavigateToStorePage"/>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

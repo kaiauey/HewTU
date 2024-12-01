@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.StorePage"
+             Title="StorePage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10"
+                             Padding="10">
+
+            <!-- Header Section -->
+            <VerticalStackLayout Padding="30, 20">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Good Morning,&#10;"
+                                  TextColor="Black"
+                                  FontFamily="Palatino"
+                                  FontSize="25"
+                                  FontAttributes="Bold"/>
+                            <Span Text="Dx212&#10;"
+                                  TextColor="#FFA0148B"
+                                  FontFamily="Palatino"
+                                  FontSize="25"
+                                  FontAttributes="Bold"/>
+                            <Span Text="Location > CITU Thammasat (TPC);"
+                                  TextColor="#FF585252"
+                                  FontSize="15"
+                                  FontAttributes="Italic"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </VerticalStackLayout>
+
+            <!-- Special Offer Section -->
+            <VerticalStackLayout Padding="10, 0"
+                                 Spacing="5">
+                <Border StrokeShape="RoundRectangle 20"
+                        StrokeThickness="0"
+                        BackgroundColor="#FFFFFAB2"
+                        VerticalOptions="Start"
+                        Padding="20">
+                    <Grid ColumnDefinitions="*,*"
+                          ColumnSpacing="50">
+                        <VerticalStackLayout Grid.Column="0"
+                                             Spacing="10">
+                            <Label Text="Special Offer"
+                                   TextColor="DarkRed"
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center"/>
+                            <Label Text="Enjoy deals of up to 50% Off"/>
+                            <Button Text="Get it now"
+                                    FontSize="15"
+                                    BackgroundColor="HotPink"
+                                    TextColor="White"
+                                    FontAttributes="Bold"
+                                    CornerRadius="20"/>
+                        </VerticalStackLayout>
+                        <Image Grid.Column="1"
+                               Source="coupon.png"
+                               HeightRequest="150"
+                               WidthRequest="150"/>
+                    </Grid>
+                </Border>
+                <SearchBar Placeholder="What would you like to eat?"
+                           BackgroundColor="#FFFFFAB2"
+                           CancelButtonColor="Red"
+                           TextChanged="OnSearchTextChanged"/>
+                
+                <Label Text="See More >"
+                       FontFamily="Palatino"
+                       TextColor="gray"
+                       TextDecorations="Underline"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"/>
+            </VerticalStackLayout>
+
+            <!-- Stores -->
+            <CollectionView Grid.Row="1"
+                            x:Name="CollectionViewStores"
+                            ItemsSource="{Binding Stores}"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            Margin="10, 0, 10, 0">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"
+                                     VerticalItemSpacing="20"
+                                     HorizontalItemSpacing="20"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border StrokeShape="RoundRectangle 20"
+                                StrokeThickness="0"
+                                BackgroundColor="#FFFFFAB2"
+                                Padding="10"
+                                Margin="10, 0, 10, 0">
+                            <Grid RowDefinitions="150,Auto"
+                                  RowSpacing="5">
+                                <!-- รูปภาพ -->
+                                <ImageButton Grid.Row="0"
+                                             Source="{Binding Image}"
+                                             HeightRequest="120"
+                                             WidthRequest="120"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             CommandParameter="{Binding Id}"
+                                             Clicked="NavigateToMenu"/>
+                                <!-- ชื่อ -->
+                                <Label Grid.Row="1"
+                                       Text="{Binding Name}"
+                                       FontSize="16"
+                                       FontAttributes="Bold"
+                                       FontFamily="Palatino"
+                                       TextColor="#FF110000"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Padding="10"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

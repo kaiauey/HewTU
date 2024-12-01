@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HewTU.OrderSummaryPage"
+             Title="OrderSummaryPage">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="20"
+                Padding="40"
+                BackgroundColor="FloralWhite">
+            <!-- Header -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Hew TU"
+                       FontSize="22"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="Palatino"
+                       FontAttributes="Bold"
+                       Grid.Column="1"/>
+            </Grid>
+
+            <!-- Order Summary Card -->
+            <Frame BackgroundColor="#FFFFFAB2"
+                    CornerRadius="20"
+                    Padding="15">
+                <VerticalStackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Order Summary"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                Grid.Column="0"/>
+                        <Label Text="20 Nov 2024"
+                                FontSize="14"
+                                Grid.Column="1"
+                                HorizontalOptions="End"/>
+                    </Grid>
+                    <Label Text="Order Details"
+                            FontSize="12"
+                            TextColor="Gray"/>
+
+                    <!-- Order Details -->
+                    <Grid RowSpacing="10"
+                            ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Sub Total -->
+                        <Label Text="Sub Total"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                VerticalOptions="Center"/>
+                        <Label Text="x Bath"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"/>
+
+                        <!-- Discount -->
+                        <Label Text="Discount (10%)"
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                VerticalOptions="Center"/>
+                        <Label Text="x Bath"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"/>
+
+                        <!-- Tax -->
+                        <Label Text="Tax (15%)"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                VerticalOptions="Center"/>
+                        <Label Text="x Bath"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"/>
+
+                        <!-- Shipping -->
+                        <Label Text="Shipping"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                VerticalOptions="Center"/>
+                        <Label Text="x Bath"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center"/>
+
+                        <!-- Total -->
+                        <Label Text="Total"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Padding="0,10,0,0"/>
+                        <Label Text="x Bath"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                Padding="0,10,0,0"
+                                HorizontalOptions="End"/>
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Select Payment Method -->
+            <Label Text="Select payment method >"
+                   TextColor="Gray"
+                   FontSize="14"
+                   HorizontalOptions="End"/>
+
+            <!-- Checkout Button -->
+            <Button Text="Check Out"
+                    BackgroundColor="#FFFFC4E9"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="30"
+                    HeightRequest="50"
+                    VerticalOptions="End"
+                    FontFamily="Palatino"
+                    Clicked="NavigateToSuccessPage"/>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
